@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cotiza tu servicio de aromatización — Aroma Center</title>
+  <meta name="description" content="Aromatización profesional para empresas. Equipo en comodato, fragancia incluida y mantención mensual. Desde UF 0,65 + IVA al mes." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lavanda: '#8B91D4',
+            lavandaOscuro: '#6b72c0',
+            crema: '#F0EAE0',
+            oscuro: '#232323',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    html { scroll-behavior: smooth; }
+    .whatsapp-btn {
+      background-color: #25D366;
+      transition: background-color 0.2s;
+    }
+    .whatsapp-btn:hover { background-color: #1fba58; }
+  </style>
+</head>
+<body class="font-sans text-oscuro antialiased">
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section class="bg-crema min-h-screen flex flex-col items-center justify-center px-6 py-16 text-center">
+    <img src="assets/logo-color.png" alt="Aroma Center" class="h-14 md:h-20 mb-10" />
+
+    <h1 class="text-3xl md:text-5xl font-bold leading-tight max-w-3xl mb-4 text-oscuro">
+      Transforma la experiencia<br class="hidden md:block" /> de tu espacio con el aroma correcto
+    </h1>
+    <p class="text-lg md:text-xl text-gray-600 max-w-2xl mb-8">
+      Aromatización profesional para empresas. Nosotros instalamos el equipo, ponemos la fragancia y la reponemos cada mes. Tú solo disfrutas el ambiente.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="https://api.whatsapp.com/send/?phone=56981715598&text=Hola%20AromaCenter.%20Necesito%20m%C3%A1s%20informaci%C3%B3n.%0A%0AID%3A%20D-80216&type=phone_number&app_absent=0"
+         target="_blank"
+         class="whatsapp-btn text-white font-semibold px-8 py-4 rounded-full text-lg flex items-center justify-center gap-2 shadow-md">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.862L0 24l6.305-1.51A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.016-1.378l-.36-.213-3.732.894.944-3.63-.235-.374A9.818 9.818 0 1112 21.818z"/>
+        </svg>
+        Cotizar por WhatsApp
+      </a>
+      <a href="https://aromacenter.cl/contacto/"
+         target="_blank"
+         class="border-2 border-lavanda text-lavanda font-semibold px-8 py-4 rounded-full text-lg hover:bg-lavanda hover:text-white transition-colors">
+        Enviar formulario
+      </a>
+    </div>
+
+    <p class="mt-6 text-sm text-gray-400">Respuesta en menos de 24 horas hábiles</p>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       ¿QUÉ ES LA AROMATIZACIÓN?
+  ══════════════════════════════════════ -->
+  <section class="bg-white px-6 py-20">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl md:text-4xl font-bold text-center mb-6">¿En qué consiste el servicio?</h2>
+      <p class="text-center text-gray-500 text-lg mb-14 max-w-2xl mx-auto">
+        Si nunca has contratado aromatización profesional, aquí te explicamos exactamente cómo funciona.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center p-6 rounded-2xl bg-crema">
+          <div class="text-4xl mb-4">🌬️</div>
+          <h3 class="font-bold text-lg mb-2">Un equipo nebulizador</h3>
+          <p class="text-gray-600 text-sm">Instalamos un dispositivo discreto en tu espacio. Libera micro-partículas de fragancia de forma continua, silenciosa y sin manchar superficies ni ropa.</p>
+        </div>
+        <div class="text-center p-6 rounded-2xl bg-crema">
+          <div class="text-4xl mb-4">🧴</div>
+          <h3 class="font-bold text-lg mb-2">La fragancia que eliges</h3>
+          <p class="text-gray-600 text-sm">Tenemos más de 1.000 fragancias. Te asesoramos para elegir el aroma ideal según tu rubro, el estilo de tu marca y el efecto que quieres generar en tus clientes.</p>
+        </div>
+        <div class="text-center p-6 rounded-2xl bg-crema">
+          <div class="text-4xl mb-4">📦</div>
+          <h3 class="font-bold text-lg mb-2">Reposición mensual incluida</h3>
+          <p class="text-gray-600 text-sm">Cada mes pasamos a reponer la fragancia. Tú no tienes que comprar nada ni preocuparte por el stock. El servicio es completamente gestionado por nosotros.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       STATS
+  ══════════════════════════════════════ -->
+  <section class="bg-lavanda px-6 py-16">
+    <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+      <div>
+        <p class="text-4xl md:text-5xl font-bold">+18</p>
+        <p class="text-sm mt-1 opacity-80">años de experiencia</p>
+      </div>
+      <div>
+        <p class="text-4xl md:text-5xl font-bold">+6.000</p>
+        <p class="text-sm mt-1 opacity-80">equipos instalados</p>
+      </div>
+      <div>
+        <p class="text-4xl md:text-5xl font-bold">+1.000</p>
+        <p class="text-sm mt-1 opacity-80">fragancias disponibles</p>
+      </div>
+      <div>
+        <p class="text-4xl md:text-5xl font-bold">+100</p>
+        <p class="text-sm mt-1 opacity-80">marcas clientes</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       QUÉ INCLUYE (COMODATO)
+  ══════════════════════════════════════ -->
+  <section class="bg-white px-6 py-20">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl md:text-4xl font-bold text-center mb-4">¿Qué incluye la tarifa mensual?</h2>
+      <p class="text-center text-gray-500 mb-12">
+        El servicio funciona en modalidad <strong>comodato</strong>: el equipo es nuestro, tú lo usas. No compras nada.
+      </p>
+
+      <div class="space-y-5">
+        <div class="flex items-start gap-4 p-5 rounded-xl border border-gray-100 shadow-sm">
+          <span class="text-lavanda text-2xl mt-0.5">✓</span>
+          <div>
+            <p class="font-semibold text-lg">Equipo nebulizador en comodato</p>
+            <p class="text-gray-500 text-sm mt-1">El dispositivo es nuestro y queda instalado en tu espacio. No hay costo de compra ni de arriendo adicional — está incluido en la mensualidad.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 p-5 rounded-xl border border-gray-100 shadow-sm">
+          <span class="text-lavanda text-2xl mt-0.5">✓</span>
+          <div>
+            <p class="font-semibold text-lg">Fragancia incluida con reposición mensual</p>
+            <p class="text-gray-500 text-sm mt-1">Cada mes reponemos el concentrado de fragancia. Aromatización continua todos los días, hasta 10 horas diarias. Sin interrupciones, sin que tengas que comprar nada.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 p-5 rounded-xl border border-gray-100 shadow-sm">
+          <span class="text-lavanda text-2xl mt-0.5">✓</span>
+          <div>
+            <p class="font-semibold text-lg">Servicio técnico permanente</p>
+            <p class="text-gray-500 text-sm mt-1">Si el equipo tiene algún problema, lo resolvemos nosotros. Tienes respaldo técnico durante toda la vigencia del servicio.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 p-5 rounded-xl border border-gray-100 shadow-sm">
+          <span class="text-lavanda text-2xl mt-0.5">✓</span>
+          <div>
+            <p class="font-semibold text-lg">Asesoría en selección de fragancia</p>
+            <p class="text-gray-500 text-sm mt-1">Te acompañamos a elegir el aroma ideal para tu espacio. Tenemos fragancias para neutralizar malos olores (baños, cocinas, mascotas, cigarrillo) y fragancias para crear experiencias de marca positivas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       PRECIOS
+  ══════════════════════════════════════ -->
+  <section class="bg-crema px-6 py-20">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl md:text-4xl font-bold text-center mb-4">Planes mensuales</h2>
+      <p class="text-center text-gray-500 mb-12">
+        El precio depende del tamaño del espacio a aromatizar. Cada equipo cubre un área específica.
+      </p>
+
+      <div class="overflow-hidden rounded-2xl shadow-sm border border-gray-200 bg-white">
+        <table class="w-full text-sm md:text-base">
+          <thead>
+            <tr class="bg-lavanda text-white">
+              <th class="text-left px-5 py-4 font-semibold">Superficie</th>
+              <th class="text-left px-5 py-4 font-semibold hidden sm:table-cell">Ejemplos</th>
+              <th class="text-right px-5 py-4 font-semibold">Precio mensual</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100">
+            <tr class="hover:bg-crema transition-colors">
+              <td class="px-5 py-4 font-medium">Hasta 5 m²</td>
+              <td class="px-5 py-4 text-gray-500 hidden sm:table-cell">Baños individuales, ascensores</td>
+              <td class="px-5 py-4 text-right font-semibold text-lavandaOscuro">UF 0,65 + IVA</td>
+            </tr>
+            <tr class="hover:bg-crema transition-colors">
+              <td class="px-5 py-4 font-medium">5 – 10 m²</td>
+              <td class="px-5 py-4 text-gray-500 hidden sm:table-cell">Oficinas y espacios pequeños</td>
+              <td class="px-5 py-4 text-right font-semibold text-lavandaOscuro">UF 0,80 + IVA</td>
+            </tr>
+            <tr class="hover:bg-crema transition-colors">
+              <td class="px-5 py-4 font-medium">10 – 25 m²</td>
+              <td class="px-5 py-4 text-gray-500 hidden sm:table-cell">Recepciones, tiendas pequeñas</td>
+              <td class="px-5 py-4 text-right font-semibold text-lavandaOscuro">UF 0,95 + IVA</td>
+            </tr>
+            <tr class="hover:bg-crema transition-colors">
+              <td class="px-5 py-4 font-medium">25 – 50 m²</td>
+              <td class="px-5 py-4 text-gray-500 hidden sm:table-cell">Salas de venta, tiendas medianas</td>
+              <td class="px-5 py-4 text-right font-semibold text-lavandaOscuro">UF 1,20 + IVA</td>
+            </tr>
+            <tr class="hover:bg-crema transition-colors">
+              <td class="px-5 py-4 font-medium">50 – 100 m²</td>
+              <td class="px-5 py-4 text-gray-500 hidden sm:table-cell">Grandes espacios comerciales</td>
+              <td class="px-5 py-4 text-right font-semibold text-lavandaOscuro">UF 1,50 + IVA</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="px-5 py-4 font-medium text-gray-500">Más de 100 m²</td>
+              <td class="px-5 py-4 text-gray-500 hidden sm:table-cell">Se evalúa instalación de más equipos</td>
+              <td class="px-5 py-4 text-right text-gray-500 font-medium">Cotización a medida</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-center text-sm text-gray-400 mt-4">
+        * Descuentos disponibles por volumen, proyectos y licitaciones.
+      </p>
+
+      <!-- Instalación -->
+      <div class="mt-10 bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
+        <h3 class="font-bold text-lg mb-1">Costo de instalación <span class="text-sm font-normal text-gray-400">(pago único al inicio)</span></h3>
+        <p class="text-gray-500 text-sm mb-4">Se paga una sola vez por dirección. Incluye la instalación del primer equipo.</p>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="bg-crema rounded-xl p-4">
+            <p class="font-semibold">Región Metropolitana</p>
+            <p class="text-lavandaOscuro font-bold text-xl mt-1">UF 1,0 + IVA</p>
+            <p class="text-gray-500 text-sm">Incluye 1 equipo</p>
+          </div>
+          <div class="bg-crema rounded-xl p-4">
+            <p class="font-semibold">Regiones</p>
+            <p class="text-lavandaOscuro font-bold text-xl mt-1">UF 1,5 + IVA</p>
+            <p class="text-gray-500 text-sm">Incluye 1 equipo</p>
+          </div>
+        </div>
+        <p class="text-gray-400 text-sm mt-3">Cada equipo adicional: UF 0,2 + IVA. Para múltiples direcciones, consulta directamente con tu ejecutivo.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       CÓMO FUNCIONA (PROCESO)
+  ══════════════════════════════════════ -->
+  <section class="bg-white px-6 py-20">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl md:text-4xl font-bold text-center mb-12">¿Cómo es el proceso?</h2>
+
+      <div class="relative">
+        <div class="hidden md:block absolute left-8 top-0 bottom-0 w-0.5 bg-lavanda opacity-20"></div>
+        <div class="space-y-10">
+          <div class="flex gap-6 items-start">
+            <div class="w-16 h-16 rounded-full bg-lavanda text-white flex items-center justify-center text-xl font-bold shrink-0">1</div>
+            <div class="pt-2">
+              <h3 class="font-bold text-lg mb-1">Cotizas y conversamos</h3>
+              <p class="text-gray-500">Nos contás el espacio que querés aromatizar y su tamaño aproximado. En menos de 24 horas te enviamos una propuesta ajustada a tu necesidad.</p>
+            </div>
+          </div>
+          <div class="flex gap-6 items-start">
+            <div class="w-16 h-16 rounded-full bg-lavanda text-white flex items-center justify-center text-xl font-bold shrink-0">2</div>
+            <div class="pt-2">
+              <h3 class="font-bold text-lg mb-1">Elegís la fragancia</h3>
+              <p class="text-gray-500">Un asesor te guía para encontrar el aroma ideal según tu rubro y el efecto que buscás: bienvenida, calma, energía, neutralización de malos olores, identidad de marca, etc.</p>
+            </div>
+          </div>
+          <div class="flex gap-6 items-start">
+            <div class="w-16 h-16 rounded-full bg-lavanda text-white flex items-center justify-center text-xl font-bold shrink-0">3</div>
+            <div class="pt-2">
+              <h3 class="font-bold text-lg mb-1">Instalamos el equipo</h3>
+              <p class="text-gray-500">Nuestro equipo técnico va a tu local e instala el nebulizador en el punto estratégico. La instalación es rápida y no requiere obras ni permisos especiales.</p>
+            </div>
+          </div>
+          <div class="flex gap-6 items-start">
+            <div class="w-16 h-16 rounded-full bg-lavanda text-white flex items-center justify-center text-xl font-bold shrink-0">4</div>
+            <div class="pt-2">
+              <h3 class="font-bold text-lg mb-1">Mantenimiento mensual automático</h3>
+              <p class="text-gray-500">Cada mes reponemos la fragancia. Tú no tienes que hacer nada. Si hay algún problema técnico, lo resolvemos sin costo adicional.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       SECTORES
+  ══════════════════════════════════════ -->
+  <section class="bg-crema px-6 py-20">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl md:text-4xl font-bold text-center mb-4">¿Para qué tipo de negocio es?</h2>
+      <p class="text-center text-gray-500 mb-12">Trabajamos con todo tipo de espacios comerciales y de servicio.</p>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        <div class="bg-white rounded-xl p-5 text-center shadow-sm hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2">🛍️</div>
+          <p class="font-medium text-sm">Retail y tiendas</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 text-center shadow-sm hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2">🏨</div>
+          <p class="font-medium text-sm">Hoteles</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 text-center shadow-sm hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2">🏢</div>
+          <p class="font-medium text-sm">Oficinas</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 text-center shadow-sm hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2">🍽️</div>
+          <p class="font-medium text-sm">Restaurantes</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 text-center shadow-sm hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2">🏠</div>
+          <p class="font-medium text-sm">Inmobiliarias y salas de venta</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 text-center shadow-sm hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2">🏋️</div>
+          <p class="font-medium text-sm">Centros deportivos</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 text-center shadow-sm hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2">🧘</div>
+          <p class="font-medium text-sm">Wellness y spa</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 text-center shadow-sm hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2">🏥</div>
+          <p class="font-medium text-sm">Centros médicos</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 text-center shadow-sm hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2">☕</div>
+          <p class="font-medium text-sm">Cafeterías</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 text-center shadow-sm hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2">📞</div>
+          <p class="font-medium text-sm">Centros de atención</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 text-center shadow-sm hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2">🚿</div>
+          <p class="font-medium text-sm">Baños y espacios comunes</p>
+        </div>
+        <div class="bg-white rounded-xl p-5 text-center shadow-sm hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-2">🏗️</div>
+          <p class="font-medium text-sm">Otros espacios</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       NOTA SOBRE EL OLFATO
+  ══════════════════════════════════════ -->
+  <section class="bg-white px-6 py-14">
+    <div class="max-w-2xl mx-auto bg-crema rounded-2xl p-8">
+      <p class="text-lg font-semibold mb-2">💡 Una nota importante sobre el olfato</p>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        Es normal que con el tiempo dejes de percibir el aroma en tu propio local — el olfato se acostumbra naturalmente tras los primeros días. Esto <strong>no significa que el equipo dejó de funcionar</strong>: la intensidad del nebulizador se mantiene constante. Tus clientes y visitas, al entrar, sí lo van a percibir plenamente.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       CTA FINAL
+  ══════════════════════════════════════ -->
+  <section class="bg-oscuro px-6 py-20 text-center text-white">
+    <h2 class="text-2xl md:text-4xl font-bold mb-4">¿Listo para cotizar?</h2>
+    <p class="text-gray-400 text-lg mb-10 max-w-xl mx-auto">
+      Cuéntanos el tipo de espacio y su tamaño. Te enviamos una propuesta en menos de 24 horas.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="https://api.whatsapp.com/send/?phone=56981715598&text=Hola%20AromaCenter.%20Necesito%20m%C3%A1s%20informaci%C3%B3n.%0A%0AID%3A%20D-80216&type=phone_number&app_absent=0"
+         target="_blank"
+         class="whatsapp-btn text-white font-semibold px-8 py-4 rounded-full text-lg flex items-center justify-center gap-2 shadow-md">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.862L0 24l6.305-1.51A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.016-1.378l-.36-.213-3.732.894.944-3.63-.235-.374A9.818 9.818 0 1112 21.818z"/>
+        </svg>
+        Cotizar por WhatsApp
+      </a>
+      <a href="https://aromacenter.cl/contacto/"
+         target="_blank"
+         class="border-2 border-white text-white font-semibold px-8 py-4 rounded-full text-lg hover:bg-white hover:text-oscuro transition-colors">
+        Enviar formulario
+      </a>
+    </div>
+    <div class="mt-10 text-gray-500 text-sm">
+      <p>+56 2 2953 8600 · contacto@aromacenter.cl · Tabancura 1562, Vitacura</p>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="bg-oscuro border-t border-gray-800 px-6 py-8">
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <img src="assets/logo-blanco.png" alt="Aroma Center" class="h-8" />
+      <p class="text-gray-600 text-sm text-center">© 2025 Aroma Center. Todos los derechos reservados.</p>
+      <a href="https://www.aromacenter.cl" target="_blank" class="text-gray-500 text-sm hover:text-white transition-colors">aromacenter.cl</a>
+    </div>
+  </footer>
+
+</body>
+</html>
